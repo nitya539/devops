@@ -2,6 +2,8 @@ document.getElementById("ecetForm").addEventListener("submit", function (e) {
   e.preventDefault(); // Prevent form from submitting
 
   const phone = document.getElementById("phone").value;
+  const fname = document.getElementById("fname").value; 
+
 
   if (!/^\d{10}$/.test(phone)) {
     alert("Phone number must be 10 digits.");
